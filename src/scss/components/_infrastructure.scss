@@ -1,0 +1,97 @@
+@import '../base/variables';
+@import '../utils/mixins';
+
+.infrastructure {
+    background-color: $very-dark-black-blue;
+    background-image: url("#{$images-path}/bg-pattern-circles.svg");
+    background-repeat: no-repeat;
+    background-position: -6rem -13.9375rem;
+    background-size: 150%;
+    border-top-right-radius: 5.5rem;
+    background-blend-mode: lighten;
+    border-bottom-left-radius: 5.5rem;
+    color: $white;
+    padding: 12.9375rem 1.875rem 6.25rem;
+    position: relative;
+    text-align: center;
+    height: 37.125rem;
+
+    @include breakpoint(tablet) {
+        background-position: -14rem -32.9375rem;
+        background-size: 70rem;
+        padding: 6.9375rem 1.875rem 6.25rem;
+        height: 24.125rem;
+    }
+
+    &__wrapper {
+        max-width: 62.5rem;
+        display: flex;
+        margin: auto;
+        flex-direction: column;
+        position: relative;
+
+        @include breakpoint(tablet) {
+            flex-direction: row;
+            justify-content: space-between;
+        }
+    }
+
+    &__floating-img {
+        position: absolute;
+        width: 114%;
+        height: 12.5rem;
+        top: -348px;
+        left: 50%;
+        max-width: 353px;
+        transform: translateX(-50%);
+
+        @include breakpoint(tablet) {
+            top: -163px;
+            left: 180px;
+            width: 50%;
+            position: relative;
+        }
+    }
+
+    &__image {
+        width: 100%;
+
+        @include breakpoint(tablet) {
+            width: 31rem;
+        }
+    }
+
+    &__info {
+        flex: 1;
+        text-align: center;
+
+        @include breakpoint(tablet) {
+            text-align: left;
+            position: relative;
+            width: 50%;
+            flex: none;
+        }
+    }
+
+    &__title {
+        font-size: 2.5rem;
+        font-family: $font-family-overpass;
+        margin-bottom: 1.9375rem;
+        font-weight: 600;
+
+        @include breakpoint(tablet) {
+            font-size: 2.2rem;
+        }
+    }
+
+    &__description {
+        font-weight: 300;
+        line-height: 1.5;
+        font-size: 1.11875rem;
+        font-family: $font-family-overpass;
+
+        @include breakpoint(tablet) {
+            font-size: 1rem;
+        }
+    }
+}

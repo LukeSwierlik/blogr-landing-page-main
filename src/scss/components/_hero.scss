@@ -1,0 +1,180 @@
+@import '../base/variables';
+@import '../utils/mixins';
+
+.hero {
+    background-image: linear-gradient(to bottom, $gradient-very-light-red, $gradient-light-red);
+    padding: 0 1.875rem;
+    color: $white;
+    border-bottom-left-radius: 5.5rem;
+    position: relative;
+    overflow: hidden;
+    height: 92vh;
+
+    @include breakpoint(mobile-horizontal) {
+        height: 70rem;
+    }
+
+    @include breakpoint(tablet) {
+        height: 50rem;
+    }
+
+    @include breakpoint(tablet-horizontal) {
+        height: 36rem;
+    }
+
+    &__background {
+        left: -34rem;
+        position: absolute;
+        top: -73rem;
+        width: 171rem;
+    }
+
+    &__wrapper {
+        max-width: 1000px;
+        height: 100%;
+        margin: 0 auto;
+        padding-top: 2rem;
+        position: relative;
+    }
+
+    &__wrapper-logo {
+        @include breakpoint(tablet) {
+            margin-right: 5.5rem;
+        }
+    }
+
+    &__header {
+        margin-bottom: 5rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: relative;
+
+        @include breakpoint(min-width, 340px) {
+            margin-bottom: 9.6rem;
+        }
+    }
+
+    &__nav {
+        display: none;
+
+        @include breakpoint(tablet) {
+            color: $white;
+            display: flex;
+            margin: 0 auto 0 0;
+        }
+
+        &-item {
+            margin-right: 2.6875rem;
+            transition: all 300ms ease-in-out;
+            position: relative;
+
+            &:hover .dropdown {
+                max-height: 18.75rem;
+            }
+        }
+    }
+
+    &__main {
+        text-align: center;
+    }
+
+    &__title {
+        font-size: 2rem;
+        line-height: 1.2;
+        font-weight: 600;
+        margin-bottom: 2.0rem;
+
+        @include breakpoint(tablet) {
+            font-size: 3rem;
+            margin-bottom: 0.9375rem;
+        }
+
+        @include breakpoint(laptop) {
+            font-size: 3.2rem;
+        }
+    }
+
+    &__subtitle {
+        font-size: 1.2rem;
+        line-height: 1.2;
+        font-weight: 300;
+        margin-bottom: 3.5rem;
+
+        @include breakpoint(tablet) {
+            font-size: 1.14rem;
+        }
+
+        @include breakpoint(laptop) {
+            font-size: 1.3125rem;
+            margin-bottom: 3.4375rem;
+        }
+    }
+
+    &__btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+
+        @include breakpoint(tablet) {
+            font-size: 1.25rem;
+        }
+
+        & :first-child {
+            margin-right: 1rem;
+        }
+    }
+
+    &__link {
+        text-decoration: none;
+        color: $white;
+    }
+
+    &__hamburger {
+        @include breakpoint(tablet) {
+            display: none;
+        }
+    }
+
+    &__btn-nav {
+        display: none;
+
+        @include breakpoint(tablet) {
+            display: block;
+        }
+    }
+}
+
+.dropdown {
+    list-style: none;
+    padding: 0 2.0625rem;
+    position: absolute;
+    background-color: $white;
+    border-radius: 0.5rem;
+    max-height: 0;
+    left: -1rem;
+    top: 2rem;
+    z-index: 3;
+    box-shadow: 0 0 13px rgb(0 0 0 / 30%);
+    transition: max-height 0.3s ease;
+    width: 11.25rem;
+    overflow: hidden;
+
+    &__item {
+        margin-top: 1.75rem;
+        margin-bottom: 1.75rem;
+
+        &-link {
+            color: $very-dark-black-blue;
+            display: block;
+            position: relative;
+            transition: all 300ms ease-in-out;
+            text-decoration: none;
+
+            &:hover {
+                font-weight: 600;
+            }
+        }
+    }
+}

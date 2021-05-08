@@ -1,7 +1,16 @@
-$font-family-open-sans: 'Open Sans', sans-serif;
-$font-family-poppins: 'Poppins', sans-serif;
+$font-family-overpass: 'Overpass', sans-serif;
+$font-family-ubuntu: 'Ubuntu', sans-serif;
 
-$violet-color: hsl(257, 40%, 49%);
-$soft-magenta: hsl(300, 69%, 71%);
+$light-red: hsl(356, 100%, 66%);
+$very-light-red: hsl(355, 100%, 74%);
+$very-dark-blue: hsl(208, 49%, 24%);
+$white: hsl(0, 0%, 100%);
+$grayish-blue: hsl(240, 2%, 79%);
+$very-dark-grayish-blue: hsl(207, 13%, 34%);
+$very-dark-black-blue: hsl(240, 10%, 16%);
+$gradient-very-light-red: hsl(13, 100%, 72%);
+$gradient-light-red: hsl(353, 100%, 62%);
+$gradient-very-dark-grey-blue: hsl(237, 17%, 21%);
+$gradient-very-dark-desaturated-blue: hsl(237, 23%, 32%);
 
-$images-path: '../images'
+$images-path: '../images';

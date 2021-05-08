@@ -6,7 +6,7 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Project</title>
+    <title>Blogr</title>
 
     <meta name="author" content="">
     <meta name="keywords" content="">
@@ -16,53 +16,253 @@
 </head>
 
 <body>
-<div class="container">
-    <header class="header">
-        <img class="header--logo" src="./images/logo.svg" alt="logo">
-    </header>
+<!-- hero -->
+<section class="hero">
+    <img src="./images/bg-pattern-intro.svg" alt="bg-pattern-intro" class="hero__background">
 
-    <main class="main">
-        <section class="illustration">
-            <img class="illustration--mockups" src="./images/illustration-mockups.svg" alt="illustration-mockups">
-        </section>
+    <div class="hero__wrapper">
+        <header class="hero__header">
+            <div class="hero__wrapper-logo">
+                <img class="hero__logo" src="./images/logo.svg" alt="logo">
+            </div>
 
-        <article class="describe">
-            <h1 class="title">Build The Community Your Fans Will Love</h1>
+            <!-- hero__nav -->
+            <nav class="hero__nav">
+                <div class="hero__nav-item">
+                    <a href="#" class="hero__link">
+                        <span>Product</span>
+                        <img src="./images/icon-arrow-light.svg" alt="nav-arrow" class="hero__nav-arrow">
+                    </a>
 
-            <p class="subtitle">
-                Huddle re-imagines the way we build communities.
-                You have a voice, but so does your audience.
-                Create connections with your users as you engage in genuine discussion.
+                    <ul class="dropdown">
+                        <li class="dropdown__item">
+                            <a href="#" class="dropdown__item-link">Overview</a>
+                        </li>
+                        <li class="dropdown__item">
+                            <a href="#" class="dropdown__item-link">Pricing</a>
+                        </li>
+                        <li class="dropdown__item">
+                            <a href="#" class="dropdown__item-link">Marketplace</a>
+                        </li>
+                        <li class="dropdown__item">
+                            <a href="#" class="dropdown__item-link">Features</a>
+                        </li>
+                        <li class="dropdown__item">
+                            <a href="#" class="dropdown__item-link">Integrations</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="hero__nav-item">
+                    <a href="#" class="hero__link">
+                        <span>Company</span>
+                        <img src="./images/icon-arrow-light.svg" alt="nav-arrow" class="hero__nav-arrow">
+                    </a>
+
+                    <ul class="dropdown">
+                        <li class="dropdown__item">
+                            <a href="#" class="dropdown__item-link">About</a>
+                        </li>
+                        <li class="dropdown__item">
+                            <a href="#" class="dropdown__item-link">Team</a>
+                        </li>
+                        <li class="dropdown__item">
+                            <a href="#" class="dropdown__item-link">Blog</a>
+                        </li>
+                        <li class="dropdown__item">
+                            <a href="#" class="dropdown__item-link">Careers</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="hero__nav-item">
+                    <a href="#" class="hero__link">
+                        <span>Connect</span>
+                        <img src="./images/icon-arrow-light.svg" alt="nav-arrow" class="hero__nav-arrow">
+                    </a>
+
+                    <ul class="dropdown">
+                        <li class="dropdown__item">
+                            <a href="#" class="dropdown__item-link">Contact</a>
+                        </li>
+                        <li class="dropdown__item">
+                            <a href="#" class="dropdown__item-link">Newsletter</a>
+                        </li>
+                        <li class="dropdown__item">
+                            <a href="#" class="dropdown__item-link">LinkedIn</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <!-- /hero__nav -->
+
+            <img class="hero__hamburger" src="./images/icon-hamburger.svg" alt="menu">
+
+            <div class="hero__btn-nav">
+                <button class="btn btn__transparent">Login</button>
+                <button class="btn btn__primary">Sing up</button>
+            </div>
+        </header>
+
+        <main class="hero__main">
+            <h1 class="hero__title">A modern publishing platform</h1>
+
+            <p class="hero__subtitle">
+                Grow your audience and build your online brand
             </p>
 
-            <button class="btn btn--primary">
-                Register
-            </button>
-        </article>
-    </main>
+            <div class="hero__btn">
+                <button class="btn btn__primary">Start for free</button>
+                <button class="btn btn__secondary">Learn more</button>
+            </div>
+        </main>
+    </div>
+</section>
+<!-- /hero -->
 
-    <footer>
-        <ul class="icons">
-            <li class="icon">
-                <a href="#" class="link">
-                    <i class="fab fa-facebook-f"></i>
-                </a>
-            </li>
+<!-- future -->
+<section class="future">
+    <div class="future__wrapper">
+        <h2 class="future__title">Designed for the future</h2>
 
-            <li class="icon">
-                <a href="#" class="link">
-                    <i class="fab fa-twitter"></i>
-                </a>
-            </li>
+        <div class="future__wrapper-description">
+            <div class="future__wrapper-img">
+                <div class="future__img"></div>
+            </div>
 
-            <li class="icon">
-                <a href="#" class="link">
-                    <i class="fab fa-instagram"></i>
-                </a>
-            </li>
-        </ul>
-    </footer>
-</div>
+            <!-- future__infos -->
+            <div class="future__infos">
+                <div class="future__info">
+                    <h2 class="future__title">Introducing an extensible editor</h2>
+
+                    <p class="future__description">
+                        Blogr features an exceedingly intuitive interface which lets you focus on one thing: creating
+                        content.
+                        The editor supports management of multiple blogs and allows easy manipulation of embeds such as
+                        images,
+                        videos, and Markdown.
+                        Extensibility with plugins and themes provide easy ways to add functionality or change the looks of
+                        a blog.
+                    </p>
+                </div>
+
+                <div class="future__info">
+                    <h2 class="future__title">Robust content management</h2>
+
+                    <p class="future__description">
+                        Flexible content management enables users to easily move through posts.
+                        Increase the usability of your blog by adding customized categories, sections, format, or flow.
+                        With this functionality, you’re in full control.
+                    </p>
+                </div>
+            </div>
+            <!-- /future__infos -->
+        </div>
+    </div>
+</section>
+<!-- /future -->
+
+<!-- infrastructure -->
+<section class="infrastructure">
+    <div class="infrastructure__wrapper">
+        <div class="infrastructure__floating-img">
+            <img src="./images/illustration-phones.svg" alt="" class="infrastructure__image">
+        </div>
+
+        <div class="infrastructure__info">
+            <h2 class="infrastructure__title">
+                State of the Art Infrastructure
+            </h2>
+
+            <p class="infrastructure__description">
+                With reliability and speed in mind, worldwide data centers provide
+                the backbone for ultra-fast connectivity.
+                This ensures your site will load instantly, no matter where your readers are, keeping your
+                site competitive.
+            </p>
+        </div>
+    </div>
+</section>
+<!-- /infrastructure -->
+
+<!-- benefits -->
+<section class="benefits">
+    <div class="benefits__wrapper">
+        <div class="benefits__image">
+<!--            <img src="./images/illustration-laptop-mobile.svg" alt="" class="benefits&#45;&#45;image__mobile">-->
+<!--            <img src="./images/illustration-laptop-desktop.svg" alt="" class="benefits&#45;&#45;image__desktop">-->
+
+            <div class="benefits__image_logo"></div>
+        </div>
+
+        <div class="benefits__features">
+            <div class="benefits__feature">
+                <h2 class="benefits__title">Free, open, simple</h2>
+                <p class="benefits__description">
+                    Blogr is a free and open source application backed by a large
+                    community of helpful developers. It supports features such as code
+                    syntax highlighting, RSS feeds, social media integration,
+                    third-party commenting tools, and works seamlessly with Google
+                    Analytics. The architecture is clean and is relatively easy to
+                    learn.
+                </p>
+            </div>
+
+            <div class="benefits__feature">
+                <h2 class="benefits__title">Powerful tooling</h2>
+                <p class="benefits__description">
+                    Batteries included. We built a simple and straightforward CLI tool
+                    that makes customization and deployment a breeze, but capable of
+                    producing even the most complicated sites.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- /benefits -->
+
+<!-- footer -->
+<footer class="footer">
+    <div class="footer__wrapper">
+        <div class="footer__logo">
+            <img src="./images/logo.svg" alt="logo">
+        </div>
+
+        <div class="footer__links">
+            <h2 class="footer__title">
+                Product
+            </h2>
+
+            <a href="#" class="footer__link">Overview</a>
+            <a href="#" class="footer__link">Pricing</a>
+            <a href="#" class="footer__link">Marketplace</a>
+            <a href="#" class="footer__link">Features</a>
+            <a href="#" class="footer__link">Integrations</a>
+        </div>
+
+        <div class="footer__links">
+            <h2 class="footer__title">
+                Company
+            </h2>
+
+            <a href="#" class="footer__link">About</a>
+            <a href="#" class="footer__link">Team</a>
+            <a href="#" class="footer__link">Blog</a>
+            <a href="#" class="footer__link">Careers</a>
+        </div>
+
+        <div class="footer__links">
+            <h2 class="footer__title">
+                Connect
+            </h2>
+
+            <a href="#" class="footer__link">Contact</a>
+            <a href="#" class="footer__link">Newsletter</a>
+            <a href="#" class="footer__link">LinkedIn</a>
+        </div>
+    </div>
+</footer>
+<!-- /footer -->
 
 <script type="text/javascript" src="../build/app.js"></script>
 

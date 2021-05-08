@@ -6,3 +6,6 @@ require('../scss/style.scss');
 
 console.log('Paste your code here!');
 console.log(testModules.hello);
+
+
+const hamburger = document.querySelector('.hero__hamburger');
